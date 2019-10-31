@@ -1,0 +1,5 @@
+<h2 style="color: green">
+  Child Component
+</h2>
+<h3 *ngIf="loggedIn; else notloggedIn">Welcome Back Nidhal !!!</h3>
+<ng-template #notloggedIn><h1> Please LoginIn !!!</h1></ng-template>

@@ -1,0 +1,15 @@
+<h2>{{ pageTitle }}</h2>  <!-- 1 interpollation -->
+<div>
+  <img [src]="imgUrl" alt="Image"> <!-- 2 property binding -->
+</div>
+<br>
+<div>
+  <button class="btn btn-primary" (click)='incrementCounter()'>Click</button> <!-- 3 event Binding -->
+  <br><br>
+  <p>Clicked <b style= "color:red">{{ count }}</b> times</p> 
+</div>
+<br>
+<div>
+  <input type="text" [(ngModel)]='name'> <!-- 4 two way binding -->
+  <p>Welcome {{ name }}</p>
+</div>
